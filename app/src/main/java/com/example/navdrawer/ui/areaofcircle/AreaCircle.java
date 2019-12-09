@@ -31,7 +31,6 @@ public class AreaCircle extends Fragment {
                 ViewModelProviders.of(this).get(AreaCircleViewModel.class);
         View root = inflater.inflate(R.layout.area_circle_fragment, container, false);
         final TextView textView = root.findViewById(R.id.text_areaofcircle);
-        etradius=root.R.id.etradius;
 
         areaCircleViewModel.getText().observe(this, new Observer<String>() {
             @Override
